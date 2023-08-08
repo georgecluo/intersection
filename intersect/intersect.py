@@ -21,7 +21,7 @@ def _rect_inter_inner(x1, x2):
     return S1, S2, S3, S4
 
 
-def _rectangle_intersection_(x1, y1, x2, y2):
+def rectangle_intersection(x1, y1, x2, y2):
     S1, S2, S3, S4 = _rect_inter_inner(x1, x2)
     S5, S6, S7, S8 = _rect_inter_inner(y1, y2)
 
@@ -64,7 +64,7 @@ x,y=intersection(x1,y1,x2,y2)
     y1 = np.asarray(y1)
     y2 = np.asarray(y2)
 
-    ii, jj = _rectangle_intersection_(x1, y1, x2, y2)
+    ii, jj = rectangle_intersection(x1, y1, x2, y2)
     n = len(ii)
 
     dxy1 = np.diff(np.c_[x1, y1], axis=0)
