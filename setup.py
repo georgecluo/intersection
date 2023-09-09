@@ -9,9 +9,9 @@ README = (HERE / "readme.md").read_text()
 
 setup(
     name="intersect",
-    version="1.2",
+    version="1.3",
     packages=find_packages(),
-    description="Intersection Of two curves",
+    description="Intersection Of two curves (AS)",
     long_description=README,
     long_description_content_type="text/markdown",
     author="sukhbinder",
